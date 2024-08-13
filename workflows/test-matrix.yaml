@@ -1,3 +1,9 @@
+name: Testing matrix strategy
+
+on:
+  pull_request:
+    branches:
+      - main
 jobs:
   job1:
     runs-on: ubuntu-latest
