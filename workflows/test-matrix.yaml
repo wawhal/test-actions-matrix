@@ -11,7 +11,7 @@ jobs:
       - id: step1
         run:
           |
-          "test=${{ matrix.os }} - ${{ matrix.arch }}" >> $GITHUB_OUTPUT
+          "test=${{ matrix.os }} --- ${{ matrix.arch }}" >> $GITHUB_OUTPUT
   job2:
     runs-on: ubuntu-latest
     needs: job1
